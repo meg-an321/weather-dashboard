@@ -1,0 +1,128 @@
+* {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: right;
+    background-image: linear-gradient(to right, rgb(103, 117, 210), rgb(59, 24, 173));
+    margin: 5px;
+    padding: 10px;
+    padding-right: 270px;
+    color: aliceblue;
+}
+
+#inputContainer {
+    padding: 5px;
+    text-align: auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+#cityName {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cityName li {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+    margin: 23px;
+    width: 450px;
+}
+#cityInput {
+    color: black;
+    width: 450px;
+}
+
+#cityName {
+    color: black;
+}
+
+button {
+    background-color: rgb(95, 95, 222);
+    width: 450px;
+    padding: 3px;
+    font-size: 16px;
+    color: aliceblue;
+    margin: 3px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px black solid;
+    margin: 100px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 200px;
+}
+
+h3 {
+    text-align: center;
+}
+.icons {
+    display: inline-bock;
+    float: right;
+    height: 270px;
+    width: 210px;
+    margin: 10px 50px 10px 50px; /* top right bottom left */
+    color: aliceblue;
+    background-color: rgb(73, 73, 112);
+}
+
+.image {
+    height: 80px;
+    width: 100%;
+}
+
+.weather {
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Wind {
+
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin-left: 6px;
+}
+
+
+.Temp {
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin-left: 6px;
+}
+
+.Humidity {
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin-left: 6px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    #cityName li, button, #cityInput {
+        width: 100%;
+    }
+ 
+    .card {
+        margin: 10px;
+        position: static;
+    }
+ 
+    .icons {
+        width: 100%;
+        float: none;
+    }
+}
